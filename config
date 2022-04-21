@@ -2,4 +2,4 @@
 Host gitlab.com
   UpdateHostKeys no
   PreferredAuthentications publickey
-  IdentityFile kdg_paul-ashioya_gitlab
+  IdentityFile IdentityFile ~/.ssh/kdg_username_gitlab
