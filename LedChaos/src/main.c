@@ -21,8 +21,6 @@ int main () {
   // lightUpAllLeds();
   lightDownAllLeds();
 
-  // lightToggleOneLed(3);
-
   while (1) 
   {
     int lednumber= (rand() % 4 );

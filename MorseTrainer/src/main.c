@@ -57,17 +57,16 @@ void endChar(){
 
 int main() //Start of the program
 {
-
   enableAllLeds();
   lightDownAllLeds();
   countDown();
   _delay_ms(1000);
 
-  char tea[5] = "ABB";
+  char Word[5] = "ABB";
 
-  for (int i = 0; i < sizeof tea; i++)
+  for (int i = 0; i < sizeof Word; i++)
   {
-    switch (tea[i])
+    switch (Word[i])
     {
     case 'A':
       morseA();
