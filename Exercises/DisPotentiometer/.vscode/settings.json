@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "potentiometer.h": "c",
+        "led.h": "c"
+    }
+}
