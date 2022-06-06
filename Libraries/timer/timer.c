@@ -96,12 +96,31 @@ void mode2(int mode)
     }
 }
 
+void stopTimer(int timer)
+{
+    switch (timer)
+    {
+    case 0:
+        TCCR0B &= ~(_BV(CS02) | _BV(CS01) | _BV(CS00));
+        break;
+    case 1:
+        TCCR1B &= ~(_BV(CS12) | _BV(CS11) | _BV(CS10));
+        break;
+    case 2:
+        TCCR2B &= ~(_BV(CS22) | _BV(CS21) | _BV(CS20));
+        break;
+    default:
+        break;
+    }
+}
+
 void prescaler0(int scale)
 {
     switch (scale)
     {
     case 0:
-        TCCR0B &= ~(_BV(CS02) | _BV(CS01) | _BV(CS00));
+        stopTimer(0);
+        break;
     case 1:
         TCCR0B |= _BV(CS00);
         break;
@@ -109,13 +128,16 @@ void prescaler0(int scale)
         TCCR0B |= _BV(CS01);
         break;
     case 64:
-        TCCR0B |= _BV(CS01) | _BV(CS00);
-        break;
-    case 256:
         TCCR0B |= _BV(CS02);
         break;
+    case 128:
+        TCCR0B |= (_BV(CS02) | _BV(CS00));
+        break;
+    case 256:
+        TCCR0B |= (_BV(CS02) | _BV(CS01));
+        break;
     case 1024:
-        TCCR0B |= _BV(CS02) | _BV(CS00);
+        TCCR0B |= (_BV(CS02) | _BV(CS00) | _BV(CS01));
         break;
     default:
         break;
@@ -126,7 +148,8 @@ void prescaler1(int scale)
     switch (scale)
     {
     case 0:
-        TCCR1B &= ~(_BV(CS12) | _BV(CS11) | _BV(CS10));
+        stopTimer(1);
+        break;
     case 1:
         TCCR1B |= _BV(CS10);
         break;
@@ -134,13 +157,16 @@ void prescaler1(int scale)
         TCCR1B |= _BV(CS11);
         break;
     case 64:
-        TCCR1B |= _BV(CS11) | _BV(CS10);
-        break;
-    case 256:
         TCCR1B |= _BV(CS12);
         break;
+    case 128:
+        TCCR1B |= (_BV(CS12) | _BV(CS10));
+        break;
+    case 256:
+        TCCR1B |= (_BV(CS12) | _BV(CS11));
+        break;
     case 1024:
-        TCCR1B |= _BV(CS12) | _BV(CS10);
+        TCCR1B |= (_BV(CS12) | _BV(CS10) | _BV(CS11));
         break;
     default:
         break;
@@ -151,7 +177,8 @@ void prescaler2(int scale)
     switch (scale)
     {
     case 0:
-        TCCR2B &= ~(_BV(CS22) | _BV(CS21) | _BV(CS20));
+        stopTimer(2);
+        break;
     case 1:
         TCCR2B |= _BV(CS20);
         break;
@@ -159,13 +186,16 @@ void prescaler2(int scale)
         TCCR2B |= _BV(CS21);
         break;
     case 64:
-        TCCR2B |= _BV(CS21) | _BV(CS20);
-        break;
-    case 256:
         TCCR2B |= _BV(CS22);
         break;
+    case 128:
+        TCCR2B |= (_BV(CS22) | _BV(CS20));
+        break;
+    case 256:
+        TCCR2B |= (_BV(CS22) | _BV(CS21));
+        break;
     case 1024:
-        TCCR2B |= _BV(CS22) | _BV(CS20);
+        TCCR2B |= (_BV(CS22) | _BV(CS20) | _BV(CS21));
         break;
     default:
         break;
@@ -199,23 +229,7 @@ void initTimer(int timer, int mode, int scalefactor)
     // enbleOVF(timer);
 }
 
-void stopTimer(int timer)
-{
-    switch (timer)
-    {
-    case 0:
-        TCCR0B &= ~(_BV(CS02) | _BV(CS01) | _BV(CS00));
-        break;
-    case 1:
-        TCCR1B &= ~(_BV(CS12) | _BV(CS11) | _BV(CS10));
-        break;
-    case 2:
-        TCCR2B &= ~(_BV(CS22) | _BV(CS21) | _BV(CS20));
-        break;
-    default:
-        break;
-    }
-}
+
 
 void enableOCRA(int timer, int OCRA)
 {

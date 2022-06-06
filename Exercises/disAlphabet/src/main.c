@@ -11,10 +11,9 @@ int main(){
   initDisplay();
 
   writeStringAndWait("dang", 1000);
-  writeStringAndWait("you", 1000);
-  writeStringAndWait("are", 1000);
+  writeStringAndWait(" you", 1000);
+  writeStringAndWait(" are", 1000);
   writeStringAndWait("dumb", 1000);
 
-  
-  
+  writeNumberAndWait(1234, 1000);  
 }

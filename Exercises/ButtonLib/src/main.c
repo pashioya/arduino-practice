@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <util/delay.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -15,10 +14,10 @@
 #define BUTTON3 PC3
 #define LED1 PB2
 #define LED2 PB3
-#define LED3 PB4 
+#define LED3 PB4
 #define LED4 PB5
 
-ISR( PCINT1_vect )
+ISR(PCINT1_vect)
 {
     if (buttonPushed(1) == 1)
     {
@@ -32,14 +31,12 @@ ISR( PCINT1_vect )
     {
         lightToggleOneLed(3);
     }
-
-
 }
 
 int main()
 {
     enableAllButtons();
-    
+
     enableAllLeds();
     lightDownAllLeds();
     sei();
@@ -48,4 +45,3 @@ int main()
         _delay_ms(1000);
     }
 }
-

@@ -60,7 +60,7 @@ void lightUpMultipleLeds(uint8_t lednumbers)
 
 void lightUpAllLeds()
 {
-    for (int i = 0; i < 4; i++)
+    for (int i = 1; i < 5; i++)
     {
         lightUpOneLed(i);
     }

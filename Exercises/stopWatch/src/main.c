@@ -9,7 +9,7 @@
 #include <button.h>
 
 uint32_t counter = 0;
-int seconds = 0;
+int seconds = 30;
 int minutes = 0;
 
 void tick()
@@ -27,7 +27,7 @@ ISR(TIMER2_COMPA_vect)
     counter++;
     if (counter % 250 == 0)
     {
-        seconds++;
+        seconds--;
         tick();
     }
 }
@@ -56,17 +56,17 @@ int main()
 
     while (1)
     {
-        // kind of slow, needs to be held down for about a second. 
-        // timer is about twice as fast as it should be. fix later
         if (buttonPushed(1) == 1)
         {
             initTimer(2, 2, 256);
             enableOCRA(2, 249);
         }
+        
         if (buttonPushed(2) == 1)
         {
             stopTimer(2);
         }
+        
         if (buttonPushed(3) == 1)
         {
             seconds = 0;
@@ -78,7 +78,7 @@ int main()
             printf("Seconds: %d \n", seconds);
             oldSeconds = seconds;
         }
-        writeTimerAndWait(1000);
+        writeTimerAndWait(100);
     }
     return 0;
 }
