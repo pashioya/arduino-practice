@@ -1,0 +1,46 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/paulashioya/Documents/PlatformIO/Projects/WriteToSerial/include",
+                "/Users/paulashioya/Documents/PlatformIO/Projects/WriteToSerial/src",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/Arduino/usart",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/Arduino/led",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/Arduino/button",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/paulashioya/Documents/PlatformIO/Projects/WriteToSerial/include",
+                    "/Users/paulashioya/Documents/PlatformIO/Projects/WriteToSerial/src",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/Arduino/usart",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/Arduino/led",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/Arduino/button",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=16000000L",
+                "PLATFORMIO=60001",
+                "ARDUINO_AVR_ATmega328P",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/Users/paulashioya/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

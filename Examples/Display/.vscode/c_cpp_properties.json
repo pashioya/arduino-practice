@@ -1,0 +1,72 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/paulashioya/Documents/PlatformIO/Projects/Display/include",
+                "/Users/paulashioya/Documents/PlatformIO/Projects/Display/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/cores/MiniCore",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/variants/standard",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/button",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/display",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/led",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/potentiometer",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/usart",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/AVR_examples/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/EEPROM/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/Optiboot_flasher/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/SPI/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/SPI1/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/SoftwareSerial/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/Wire/src",
+                "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/Wire1/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/paulashioya/Documents/PlatformIO/Projects/Display/include",
+                    "/Users/paulashioya/Documents/PlatformIO/Projects/Display/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/cores/MiniCore",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/variants/standard",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/button",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/display",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/led",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/potentiometer",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/usart",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/AVR_examples/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/EEPROM/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/Optiboot_flasher/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/SPI/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/SPI1/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/SoftwareSerial/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/Wire/src",
+                    "/Users/paulashioya/.platformio/packages/framework-arduino-avr-minicore/libraries/Wire1/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60001",
+                "ARDUINO_AVR_ATmega328P",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compilerPath": "/Users/paulashioya/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

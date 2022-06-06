@@ -1,0 +1,54 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/paulashioya/Documents/PlatformIO/Projects/ButtonInterrupts/include",
+                "/Users/paulashioya/Documents/PlatformIO/Projects/ButtonInterrupts/src",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/button",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/buzzer",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/display",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/led",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/potentiometer",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/timer",
+                "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/usart",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/paulashioya/Documents/PlatformIO/Projects/ButtonInterrupts/include",
+                    "/Users/paulashioya/Documents/PlatformIO/Projects/ButtonInterrupts/src",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/button",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/buzzer",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/display",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/led",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/potentiometer",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/timer",
+                    "/Users/paulashioya/Library/Mobile Documents/com~apple~CloudDocs/IdeaProjects/Libraries/arduino/usart",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=16000000L",
+                "PLATFORMIO=60002",
+                "ARDUINO_AVR_ATmega328P",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/Users/paulashioya/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
